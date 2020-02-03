@@ -1,22 +1,37 @@
-<cst-navbar home="/home" class="nav-inverse nav-sticky arc-ui-navbar">
-    <div>
-            <div class="header-logo"></div>
+<div class="rates-top-header">
+    <div class="rates-top-header-left-section">
+        <div class="rates-top-header-logo"></div>
+        <div class="rates-top-header-title">EPM</div>
+    </div>
+    <div class="rates-top-header-tab-list-text">
+        <div *ngFor="let selectedTabObj of headerTabList; let index=index" (click)="selectedHeaderTab($event, index,selectedTabObj )" [class]="(selectedHeaderTabIndex == index) ? 'rates-top-header-active-tab' : 'rates-top-header-tab-list-text-content'">
+            {{selectedTabObj}}
         </div>
-    <ul>
-        <li>
+    </div>
+    <div class="rates-top-header-right-section">
+        <div class="search-icon"></div>
+        <div class="help-icon"></div>
+        <div class="country-icon" (mouseover)="showLocationList()">
+            <div class="expand-country-menu" (mouseleave)="hideLocationList()">
+                <!--<kendo-popup [popupClass]="'location-menu-with-kendo-popup'">-->
+                <div [class]="selectedCountry == getCountryCode(countryValue) ? 'country location-list selected-country-div' : 'country location-list'" *ngFor="let countryValue of countryList | unique" (click)="onChangeCountry($event, countryValue)">
+                    <div [class]="'country-flag country-flag-'+countryValue"></div>
+                    <div class="country-list-value">{{countryValue}}</div>
+                </div>
+                <!--</kendo-popup>-->
 
-            <a routerLink="/home" routerLinkActive="active" style="font-size: 16px; font-weight: 500">
-                Grapewine
-            </a>
-        </li>
-    </ul>
-
-    <ul class="push-right">
-        <li style="font-size: 14px; color: #fff; padding-top: 1px;"><i class="mdi mdi-account-circle" style="font-size: 24px; vertical-align: middle"></i> <span class="arc-ui-username">{{userName}}</span></li>
-        <li>
-            <div (click)="logout()">
-                <i class="mdi mdi-logout-variant" style="color: #fff; font-size: 24px;"></i>
             </div>
-        </li>
-    </ul>
-</cst-navbar>
+        </div>
+        <div class="my-profile-icon">
+            <div class="expand-profile-menu">
+                <div class="logout-profile" (click)="onClickLogout($event)">Logout</div>
+            </div>
+        </div>
+    </div>
+    <div [hidden]="isPopupForFetchLDAPUserInfoHidden">
+        <rates-error-popup [buttons]="buttonsForFetchLDAPUserInfoErrorPopup" [errorTitle]="titleForFetchLDAPUserInfoErrorPopup
+    " [errorMessage]="messageForFetchLDAPUserInfoErrorPopup" (cancelEvent)="cancelEventActionOnFetchLDAPUserInfoErrorPopup()">
+        </rates-error-popup>
+    </div>
+    <div [ngBusy]="{busy: loadingImage, message: 'Loading...', backdrop: true}"></div>
+</div>
