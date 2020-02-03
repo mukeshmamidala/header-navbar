@@ -1,0 +1,54 @@
+#########################
+## Sample Sass Lint File
+#########################
+# Linter Options
+options:
+  verbose: true
+  # Don't merge default rules
+  merge-default-rules: false
+  # Set the formatter to 'html' TODO: change this to html if you want to generate html output.
+  formatter: stylish
+  # Output file instead of logging results. Disabled this for the moment, so we can see the output in Jenkins logs.
+  #output-file: 'linters/sass-lint.html'
+  # Raise an error if more than 50 warnings are generated
+  max-warnings: 50
+# File Options
+files:
+  include: 'src/**/*.s+(a|c)ss'
+  ignore:
+    - 'src/node_modules/*.*'
+    - 'node_modules/*.*'
+    - 'src/_font.scss'
+# Rule Configuration
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 1
+  # commenting out no-important rule because we need it for multiple kendo styles.
+  no-important: 1
+  indentation:
+    - 0
+    -
+      size: 4
+  property-sort-order:
+    - 1
+    -
+      order:
+        - display
+        - margin
+      ignore-custom-properties: true
+  variable-for-property:
+    - 2
+    -
+      properties:
+        - content
