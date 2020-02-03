@@ -1,0 +1,22 @@
+<cst-navbar home="/home" class="nav-inverse nav-sticky arc-ui-navbar">
+    <div>
+            <div class="header-logo"></div>
+        </div>
+    <ul>
+        <li>
+
+            <a routerLink="/home" routerLinkActive="active" style="font-size: 16px; font-weight: 500">
+                Grapewine
+            </a>
+        </li>
+    </ul>
+
+    <ul class="push-right">
+        <li style="font-size: 14px; color: #fff; padding-top: 1px;"><i class="mdi mdi-account-circle" style="font-size: 24px; vertical-align: middle"></i> <span class="arc-ui-username">{{userName}}</span></li>
+        <li>
+            <div (click)="logout()">
+                <i class="mdi mdi-logout-variant" style="color: #fff; font-size: 24px;"></i>
+            </div>
+        </li>
+    </ul>
+</cst-navbar>
