@@ -1,0 +1,167 @@
+ .mat-button{
+   padding: 0px 5px 0px 5px !important;
+   margin-top: 0.4em !important;
+   margin-left: 65.5% !important
+ }
+ .mat-button-custom {
+   width: auto;
+   float: right;
+ }
+ .form-ctrl-no-error {
+   margin-left: 10%;
+   -webkit-tap-highlight-color: transparent;
+   background-color: forestgreen;
+   text-shadow: none;
+   transition-duration: 0.4s, 280ms;
+   text-indent: 0px;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+   text-transform: none;
+   color: rgb(255, 255, 255);
+
+ }
+ .form-ctrl-error {
+   margin-left: 10%;
+   padding-left: 5px;
+   -webkit-tap-highlight-color: transparent;
+   background-color: rgb(244, 67, 54);
+   text-shadow: none;
+   transition-duration: 0.4s, 280ms;
+   text-indent: 0px;
+   text-transform: none;
+   color: rgb(255, 255, 255);
+ }
+ .card-div{
+   padding-bottom: 20px;
+ }
+ .mat-table {
+   margin-left: 28px;
+   width: 90%;
+   border: black solid;
+ }
+ td, th {
+   width: 25%;
+ }
+ .mat-table td, .mat-table th {
+   width: 15%;
+ }
+ .mat-header-cell{
+   color: orange;
+   background: black;
+ }
+ .mat-icon-add{
+   cursor: pointer;
+   color: #D8000C;
+ }
+ .mat-icon {
+   color: green;
+ }
+ th.mat-header-cell:last-of-type {
+   padding-right: 140px;
+ }
+ .adjust-width{
+  display: flex;
+  border-bottom: 0;
+  }
+ .data-field-label-div {
+   padding-left: 26px;
+ }
+
+ .show-no-table-div {
+   display: none;
+ }
+ .show-table-div {
+   display: block;
+   border: 1px solid grey;
+   margin: 3.5em;
+ }
+.mat-icon {
+  color: green;
+  cursor: pointer;
+}
+.table-label {
+padding-left: 28px;
+    padding-bottom: 12px;
+    font-size: large;
+}
+.mat-card {
+  margin-top: 1.5em;
+  background: lightgrey;
+}
+.mat-card-title{
+  color: black; 
+}
+.mat-card-subtitle{
+  color: black;
+  display: block;
+  margin-top: 13px !important;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 4px !important;
+}
+.mat-table tr:nth-child(odd){
+  background: lightgray;
+}
+.mat-divider-class{
+    display: flex;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: black;
+    position: absolute;
+    left: 14px !important;
+    width: 90% !important;
+    align-items: center;
+}
+
+.form-ctrl-back {
+  margin-left: 5%;
+  padding-left: 20px;
+  transition-property: background, box-shadow;
+  border-radius: 4px;
+  font: 500 14px/36px Roboto, "Helvetica Neue", sans-serif;
+  padding: 0px 16px;
+  outline: 0px;
+  text-decoration: none;
+  border: none;
+  overflow: visible;
+  text-align: center;
+  vertical-align: baseline;
+  text-rendering: auto;
+  user-select: none;
+  word-spacing: normal;
+  -webkit-tap-highlight-color: transparent;
+  background-color: cornflowerblue;
+  text-shadow: none;
+  transition-duration: 0.4s, 280ms;
+  text-indent: 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  text-transform: none;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-writing-mode: horizontal-tb;
+  white-space: nowrap;
+  min-width: 76px;
+  align-items: flex-start;
+  transform: translate3d(0px, 0px, 0px);
+  letter-spacing: normal;
+  cursor: pointer;
+}
+.main-content-header {
+  margin: .7em 0;
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .main-content-header-title {
+      text-indent: 1%;
+      padding-left: 8px;
+      min-width: 25%;
+      font-family: OpenSans-Bold;
+      font-size: 1.2em;
+      font-weight: 700;
+      color: black;
+  }
+}
