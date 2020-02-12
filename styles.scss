@@ -1,4 +1,16 @@
 
+@import "font";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@cst/cst-components/bundles/cst-components.min.css";
+@import "variables";
+@import "~ng-busy/src/style/busy.css";
+@import "./app/commonSass/cst-dropdown-search-custom-styles.scss";
+@import "./app/stylings/common-layout-styles.scss";
+@import "./app/stylings/icon-styles.scss";
+@import"~@progress/kendo-theme-default/dist/all.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~angular-tree-component/dist/angular-tree-component.css';
+
 html, body {
   padding: 0;
   margin: 0;
