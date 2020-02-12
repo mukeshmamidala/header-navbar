@@ -1,258 +1,115 @@
-.rates-top-header {
-    width: 100%;
-    height: 8%;
-    background: black;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.rates-top-header-left-section {
-    width: 16%;
-    /*height: 100%;*/
-    height: 60%;
-    display: flex;
-    align-items: center;
-}
-
-.rates-top-header-logo {
-    background: url('../assets/img/svg/dbs-logo.svg') left no-repeat;
-    margin-left: 10%;
-    /*height: 60%;*/
-    height: 100%;
-    width: 35%;
-    background-size: contain;
-    /*width: 45%;
-    background-size: 80% 80%;*/
-    background-position: center;
-}
-
-.rates-top-header-title {
-    color: #eee;
-    font-family: OpenSans-Regular;
-    margin-top: 3%;
-    margin-left: 2%;
-    font-size: 0.9em;
-    /*align-self: center;
-*/
-    /*position: relative;
-    width: 15%;
-    color: white;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 112%;
-    top: 41%;
-    left: 0.5%;*/
-}
-
-.rates-top-header-tab-list-text {
-    display: flex;
-    align-items: center;
-    flex: 1 0 auto;
-}
-
-.rates-top-header-tab-list-text-content {
-    color: #eee;
-    font-family: OpenSans-Regular;
-    display: table-cell;
-    margin-right: 25px;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-.rates-top-header-tab-list-text-1,
-.rates-top-header-tab-list-text-2,
-.rates-top-header-tab-list-text-3,
-.rates-top-header-tab-list-text-4,
-.rates-top-header-tab-list-text-5,
-.rates-top-header-tab-list-text-6,
-.rates-top-header-tab-list-text-7 {
-    display: table-cell;
-    color: #eee;
-    margin-right: 1%;
-    font-family: OpenSans-Regular;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-.rates-top-header-right-section {
-    //background: url('../assets/img/ico-right-section.png') no-repeat;    
-    width: 12%;
-    height: 100%;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 2.52%;
-}
-
-.search-icon {
-    background: url('../assets/img/ic_search_main.png') center center no-repeat;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-}
-
-.help-icon {
-    background: url('../assets/img/ic_help.png') center center no-repeat;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-}
-
-.country-icon {
-    background: url('../assets/img/Ic_country_sg_large.png') center center no-repeat;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    /*
-    .expand-country-menu {
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 8%;
+    @import './../../variables';
+    #header {
         position: fixed;
-        top: 5%;
-        height: 30%;
-        right: 4.52%;
-        background: #ffffff;
-        cursor: pointer;
-        .country {
+        width: 100%;
+        height: 8%;
+        .ca-top-header {
+            // width: 100%;
+            height: 100%;
+            background: $black;
+            // position: fixed;
             display: flex;
-            width: 100%;
-            height: 10%;
-            .country-flag {
-                width: 20%;
-                height: 100%;
-                background-size: 100% 80%;
-                display: flex;
-            }
-            .country-flag-Dubai {
-                background: url('../assets/img/AE.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Australia {
-                background: url('../assets/img/AU.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-China {
-                background: url('../assets/img/CN.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Hong.Kong {
-                background: url('../assets/img/HK.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Indonesia {
-                background: url('../assets/img/ID.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-India {
-                background: url('../assets/img/IN.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Japan {
-                background: url('../assets/img/JP.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Korea {
-                background: url('../assets/img/KR.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Labuan {
-                background: url('../assets/img/MY.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Singapore {
-                background: url('../assets/img/SG.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Taiwan {
-                background: url('../assets/img/TW.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-United.Kingdom {
-                background: url('../assets/img/UK.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-flag-Vietnam {
-                background: url('../assets/img/VN.png') left center no-repeat;
-                background-size: 100% 80%
-            }
-            .country-list-value {
-                width: 100%;
-                font-family: Opensans-Semibold;
-                font-size: small;
-                height: 100%;
+            align-items: center;
+            justify-content: space-between;
+            .ca-top-header-left-section {
+                width: 30%;
+                height: 60%;
                 display: flex;
                 align-items: center;
-                padding-left: 3%;
+                .ca-top-header-logo {
+                    background: url('../../assets/icon/logo@1x.png') no-repeat;
+                    margin-left: 5%;
+                    height: 100%;
+                    width: 15%;
+                    background-size: contain;
+                    background-position: left center;
+                }
+                .ca-top-header-title {
+                    color: $white-title;
+                    font-family: OpenSans-Regular;
+                    margin-top: 1%;
+                    margin-left: 2%;
+                    width: 80%;
+                    font-size: 2.5vh;
+                }
+            }
+            .ca-top-header-tab-list-text {
+                display: flex;
+                align-items: center;
+                flex: 1 0 auto;
+                // .ca-top-header-active-tab {
+                color: $header-red;
+                font-family: OpenSans-Semibold;
+                font-weight: bold;
+                display: table-cell;
+                margin-right: 25px;
+                font-size: .9em;
+                cursor: pointer;
+                // }
+            }
+            .ca-top-header-right-section {
+                width: 12%;
+                height: 100%;
+                background-size: contain;
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+                justify-content: flex-end;
+                margin-right: 2.52%;
+                .search-icon {
+                    background: url('../../assets/icon/search-icon.png') 50% no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                }
+                .help-icon {
+                    background: url('../../assets/icon/help-icon.png') 50% no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                }
+                .country-icon {
+                    background: url('../../assets/icon/SG.png') center center no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                }
+                .setting-icon {
+                    background: url('../../assets/icon/ic_settings.png') center center no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                }
+                .my-profile-icon {
+                    background: url('../../assets/icon/profile-icon.png') 50% no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    margin-left: 10%;
+                    .expand-profile-menu {
+                        display: none;
+                        width: 6%;
+                        position: fixed;
+                        top: 5%;
+                        height: auto;
+                        right: 2.52%;
+                        background: $white;
+                    }
+                }
+                .my-profile-icon:hover {
+                    .expand-profile-menu {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .logout-profile {
+                        cursor: pointer;
+                        width: 100%;
+                        text-align: center;
+                        font-family: Opensans-Semibold;
+                        font-size: small;
+                    }
+                }
             }
         }
     }
-    */
-}
-
-.country-icon:hover {
-    // .expand-country-menu {
-    //     display: flex;
-    // }
-}
-
-.my-profile-icon {
-    background: url('../assets/img/ic_my_profile.png') center center no-repeat;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    .expand-profile-menu {
-        display: none;
-        width: 6%;
-        // background: #ffffff;
-        position: fixed;
-        top: 5%;
-        height: auto;
-        right: 2.52%;
-    }
-}
-
-.my-profile-icon:hover {
-    .expand-profile-menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .logout-profile {
-        cursor: pointer;
-        width: 100%;
-        text-align: center;
-        font-family: Opensans-Semibold;
-        font-size: small;
-    }
-}
-
-.expand-profile-menu {
-    width: 6%;
-    background: #ffffff;
-    position: absolute;
-    top: 70%;
-    height: 80px;
-    right: 2.52%;
-}
-
-.rates-top-header-active-tab {
-    color: #d3090f;
-    font-family: OpenSans-Bold;
-    display: table-cell;
-    margin-right: 25px;
-    font-size: 0.9em;
-    cursor: pointer;
-}
-
-.selected-country-div {
-    background-color: $light-blue-color;
-}
-
-.country.location-list:hover {
-    background-color: $light-blue-color;
-}
