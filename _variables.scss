@@ -1,0 +1,106 @@
+$margin-session-dialog: 30px;
+//color
+$orange-background-color : #FF7700;
+$pale-orange-background-color : #FFC999;
+$cyan-background-color : #00BBCC;
+$pale-cyan-background-color : #7FDDE5;
+$dark-violet-background-color : #5511CC;
+$white: #ffffff;
+$black: #000000;
+$light-black : #333333;
+$gray: #f2f2f2;
+$rule-list-gray: #888888;
+$cla-box-gray:#979797;
+$cst-dropdown-blue: #0077cc;
+$white-title: #eeeeee;
+$header-red: #d3090f;
+$error-red:#ff0000;
+$error-icon-red: #FF3333;
+$error-icon-gray: #E9E9E9;
+$aside-panelbar-gray: #e6e6e6;
+$aside-panelbar-text:#656565;
+$aside-panelbar-border:#c9c8c9;
+$aside-panelbar-link: #777777;
+$cst-button-primary:#0087d7;
+$cst-button-primary-box-shadow: #006eb0;
+$button-primary-color: #0077DD;
+$edit-icon-border: #406fa0;
+$cst-button-primary-hover:#39a4e3;
+$alert-blue: #2196F3;
+$right-content-border-bottom: #cbcbcb;
+$popup-upload-text: #555555;
+$popup-upload-label: #1591db;
+$popup-disable-button-box-shadow: #969696;
+$popup-disable-button:#999999;
+$dropdown-arrow-background: #ededed;
+$table-border: #c7c0c0;
+$border-blue-color : #0077CC;
+$radio-button-blue-color : #0077CC;
+$radio-button-white-color : #ffffff;
+//handsOnTable 
+$handsOnTable-header-background-color: #F0F0F0;
+$handsOnTable-filter-background-color: #666666;
+$handsOnTable-filter-field-border-color: 1px solid #D6D6D6;
+$handsOnTable-filter-field-border-radius: 2px;
+$handsOnTable-header-font-size:0.75em;
+$handsOnTable-tr-td-font-size:0.75em;
+//Tooltip
+$tooltip-border-color: #D6D6D6;
+$tooltip-border-radius:2px;
+$tooltip-font-size:0.75em;
+//FONT RELATED
+$op-semibold-font-family:OpenSans-Semibold;
+$op-regular-font-family:OpenSans-Regular;
+$op-bold-font-family:OpenSans-Bold;
+$black-text-color : #000000;
+$white-text-color : #ffffff;
+$blue-text-color : #0077CC;
+$no-border-pos: 'bottom';
+$accordion-content-background: #E3E3E3;
+$non-process: #0095FF;
+$coverage: #FFAA22;
+$puc: #00CC6E;
+// mixin
+@mixin main-content-background-linear-gradient($color1-with-percent, $color2-with-percent) {
+  background: -webkit-linear-gradient(180deg, $color1-with-percent, $color2-with-percent);
+  background: -o-linear-gradient(to bottom, $color1-with-percent, $color2-with-percent);
+  background: -moz-linear-gradient(to bottom, $color1-with-percent, $color2-with-percent);
+  background: linear-gradient(180deg, $color1-with-percent, $color2-with-percent);
+}
+
+@mixin grid-header-background-linear-gradient($color1-with-percent, $color2-with-percent, $color3-with-percent, $color-4) {
+  background: -webkit-linear-gradient(180deg, $color1-with-percent, $color2-with-percent, $color3-with-percent, $color-4);
+  background: -o-linear-gradient(to bottom, $color1-with-percent, $color2-with-percent, $color3-with-percent, $color-4);
+  background: -moz-linear-gradient(to bottom, $color1-with-percent, $color2-with-percent, $color3-with-percent, $color-4);
+  background: linear-gradient(180deg, $color1-with-percent, $color2-with-percent, $color3-with-percent, $color-4);
+}
+
+@mixin no-solid-border($no-border-pos, $border-width, $border-col) {
+  @if ($no-border-pos=="top") {
+    border-bottom: $border-width solid $border-col;
+    border-left: $border-width solid $border-col;
+    border-right: $border-width solid $border-col;
+    border-top: none;
+  }
+
+  @else if($no-border-pos=="bottom") {
+    border-top: $border-width solid $border-col;
+    border-left: $border-width solid $border-col;
+    border-right: $border-width solid $border-col;
+    border-bottom: none;
+  }
+
+  @else if($no-border-pos=="left") {
+    border-top: $border-width solid $border-col;
+    border-bottom: $border-width solid $border-col;
+    border-right: $border-width solid $border-col;
+    border-left: none;
+  }
+
+  @else {
+    border-top: $border-width solid $border-col;
+    border-bottom: $border-width solid $border-col;
+    border-left: $border-width solid $border-col;
+    border-right: none;
+  }
+}
